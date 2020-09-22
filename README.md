@@ -52,7 +52,7 @@ npx pod-install
 
 2. Add this to Info.plist
 
-```sh
+```xml
   <key>UIAppFonts</key>
   <array>
    <string>AntDesign.ttf</string>
@@ -77,7 +77,7 @@ npx pod-install
    <string>Roboto_medium.ttf</string>
    <string>Roboto.ttf</string>
    <string>rubicon-icon-font.ttf</string>
- 	</array>
+  </array>
   <key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
