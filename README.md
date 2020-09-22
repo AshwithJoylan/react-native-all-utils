@@ -4,8 +4,8 @@ Utils For React Native
 
 ## Installation
 
-```sh
 ### Using Yarn
+```sh
 yarn add react-native-reanimated react-native-safe-area-context react-native-gesture-handler react-native-vector-icons react-native-redash react-native-safe-area-view @types/react-native-vector-icons react-native-image-crop-picker
 ```
 
