@@ -97,7 +97,7 @@ const App = () => (
   <Root>
     // Components
   </Root>
-  );
+);
 ```
 
 ```js
