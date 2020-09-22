@@ -75,12 +75,12 @@ npx pod-install
    <string>Roboto.ttf</string>
    <string>rubicon-icon-font.ttf</string>
 	 <key>NSCameraUsageDescription</key>
+ 	</array>
 	<string>$(PRODUCT_NAME) wants to access your camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your gallery</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your microphone</string>
- 	</array>
 ```
 
 ## Usage

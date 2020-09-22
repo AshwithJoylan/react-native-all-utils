@@ -77,12 +77,12 @@
    <string>Roboto_medium.ttf</string>
    <string>Roboto.ttf</string>
    <string>rubicon-icon-font.ttf</string>
-	 <key>NSCameraUsageDescription</key>
+ 	</array>
+	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your gallery</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) wants to access your microphone</string>
- 	</array>
 </dict>
 </plist>
