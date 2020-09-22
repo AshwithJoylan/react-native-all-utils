@@ -79,11 +79,11 @@ npx pod-install
    <string>rubicon-icon-font.ttf</string>
   </array>
   <key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) wants to access your camera</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) wants to access your gallery</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>$(PRODUCT_NAME) wants to access your microphone</string>
+  <string>$(PRODUCT_NAME) wants to access your camera</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>$(PRODUCT_NAME) wants to access your gallery</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>$(PRODUCT_NAME) wants to access your microphone</string>
 ```
 
 ## Usage
