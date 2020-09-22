@@ -1,25 +1,14 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import AllUtils from 'react-native-all-utils';
+import { Root, withSafeArea, useSafeArea } from 'react-native-all-utils';
+import Test from './Test';
 
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    AllUtils.multiply(3, 7).then(setResult);
-  }, []);
-
+const App = () => {
+  const { bottom } = useSafeArea();
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <Root pickerProps={{ bottom }}>
+      <Test />
+    </Root>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default withSafeArea(App);
