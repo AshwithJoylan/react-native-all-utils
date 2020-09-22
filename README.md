@@ -6,49 +6,52 @@ Utils For React Native
 
 ```sh
 ### Using Yarn
-yarn add react-native-reanimated react-native-safe-area-context react-native-gesture-handler react-native-vector-icons react-native-redash react-native-safe-area-view @types/react-native-vector-icons react-native-image-crop-picker 
+yarn add react-native-reanimated react-native-safe-area-context react-native-gesture-handler react-native-vector-icons react-native-redash react-native-safe-area-view @types/react-native-vector-icons react-native-image-crop-picker
 ```
 
 ### Android Setup
- 1. Add this line in android/app/build.gradle
 
- ```sh
- apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
- ```
+1.  Add this line in android/app/build.gradle
 
- 2. Change MainActivity.java as Follows
+```sh
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+```
 
- ```java
-  // imports
-  // Add this
-  import com.facebook.react.ReactActivityDelegate;
-  import com.facebook.react.ReactRootView;
-  import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+2.  Change MainActivity.java as Follows
+
+```java
+ // imports
+ // Add this
+ import com.facebook.react.ReactActivityDelegate;
+ import com.facebook.react.ReactRootView;
+ import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 
-  Public Class MainActivity  extends ReactActivity {
+ Public Class MainActivity  extends ReactActivity {
 
-  // Add this
-    @Override
-    protected ReactActivityDelegate createReactActivityDelegate() {
-      return new ReactActivityDelegate(this, getMainComponentName()) {
-        @Override
-        protected ReactRootView createRootView() {
-        return new RNGestureHandlerEnabledRootView(MainActivity.this);
-        }
-      };
-    } 
-  }
- ```
+ // Add this
+   @Override
+   protected ReactActivityDelegate createReactActivityDelegate() {
+     return new ReactActivityDelegate(this, getMainComponentName()) {
+       @Override
+       protected ReactRootView createRootView() {
+       return new RNGestureHandlerEnabledRootView(MainActivity.this);
+       }
+     };
+   }
+ }
+```
 
 ### IOS Setup
 
 1. Install Pods
+
 ```sh
 npx pod-install
 ```
 
 2. Add this to Info.plist
+
 ```sh
   <key>UIAppFonts</key>
   <array>
@@ -86,7 +89,7 @@ npx pod-install
 ## Usage
 
 ```js
-import AllUtils from "react-native-all-utils";
+import AllUtils from 'react-native-all-utils';
 
 // ...
 
