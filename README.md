@@ -88,12 +88,26 @@ npx pod-install
 
 ## Usage
 
+1. Add Root in App.js
+
 ```js
-import AllUtils from 'react-native-all-utils';
+import { Root } from 'react-native-all-utils';
+
+const App = () => (
+  <Root>
+    // Components
+  </Root>
+  );
+```
+
+```js
+import { Alert } from 'react-native-all-utils';
 
 // ...
-
-const result = await AllUtils.multiply(3, 7);
+Alert.show({
+  title: 'Alert',
+  description: 'Alert Description',
+});
 ```
 
 ## Contributing
