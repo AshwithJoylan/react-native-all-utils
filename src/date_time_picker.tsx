@@ -58,7 +58,7 @@ export interface DateTimePickerComponentProps {
   timePickerModeAndroid?: 'spinner' | 'clock' | 'default';
   /**
    * Toggles the time mode on Android between spinner and clock views
-   * 
+   *
    * @Default 'default' which shows either spinner or clock based on Android version
    */
   isDarkModeEnabled?: boolean;
