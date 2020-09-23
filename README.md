@@ -2,6 +2,49 @@
 
 Utils For React Native
 
+## Features
+
+  ### 1. Alert
+
+  ### 2. Toast
+
+  ### 3. Picker
+
+  ### 4. Modal
+
+  ### 5. Image Picker
+
+  ### 6. Date Time Picker
+
+  ### 7. Services
+
+    i. Navigation Service
+    ii. Settings Service
+    
+  ### 8. Re Highlight
+
+  ### 9. Highlight
+
+  ### 10. Toggle Switch Base
+
+  ### 11. Height Collapsible
+
+  ### 12. Text
+
+  ### 13. Icon
+
+  ### 14. Metrics
+
+    i. Sizes
+    ii. Typography
+  
+  ### Others
+
+    i. withSafeArea
+    ii. Animated Components
+    iii. Animation hooks
+
+
 ## Installation
 
 ### Using Yarn

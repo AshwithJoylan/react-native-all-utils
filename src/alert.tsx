@@ -113,7 +113,7 @@ let onConfirm = () => {},
  * @class Alert
  * @extends {React.Component}
  */
-export default class Alert extends React.Component<AlertComponentProps> {
+export default class Alert extends React.PureComponent<AlertComponentProps> {
   val: Animated.Value<number> = new Animated.Value(0);
   constructor(props: Readonly<AlertComponentProps>) {
     super(props);

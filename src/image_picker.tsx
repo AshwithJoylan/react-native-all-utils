@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 //import libraries
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Text,
@@ -38,7 +38,7 @@ export interface ImagePickerComponentProps {
 }
 
 //component
-class CustomImagePicker extends Component<
+class CustomImagePicker extends PureComponent<
   ImagePickerComponentProps,
   ImagePickerState
 > {

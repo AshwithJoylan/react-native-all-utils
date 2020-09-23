@@ -5,3 +5,4 @@ export { default as HeightCollapsible } from './height_collapsible';
 export * from './higher_order';
 export { default as Toggle } from './toggle';
 export { default as Modal } from './modal';
+export * from './services';

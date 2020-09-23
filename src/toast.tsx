@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { StyleSheet } from 'react-native';
 import Animated, {
   Value,
@@ -46,7 +46,7 @@ interface ToastShowProps {
   onDone?: () => void;
 }
 
-class Toast extends Component<{}, ToastState> {
+class Toast extends PureComponent<{}, ToastState> {
   constructor(props: Readonly<{}>) {
     super(props);
     this.state = {

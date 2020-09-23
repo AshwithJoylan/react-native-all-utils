@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   StyleSheet,
@@ -76,7 +76,7 @@ interface PickerState {
   height: number;
 }
 
-export default class Picker extends Component<PickerProps, PickerState> {
+export default class Picker extends PureComponent<PickerProps, PickerState> {
   constructor(props: Readonly<PickerProps>) {
     super(props);
     this.state = {
