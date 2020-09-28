@@ -32,7 +32,7 @@ Utils For React Native
 
 ### Using Yarn
 ```sh
-yarn add react-native-reanimated react-native-safe-area-context react-native-gesture-handler react-native-vector-icons react-native-redash react-native-safe-area-view @types/react-native-vector-icons react-native-image-crop-picker react-native-modal-datetime-picker @react-native-community/datetimepicker
+yarn add react-native-reanimated react-native-safe-area-context react-native-gesture-handler react-native-vector-icons react-native-redash@14.2.4 react-native-safe-area-view @types/react-native-vector-icons react-native-image-crop-picker react-native-modal-datetime-picker @react-native-community/datetimepicker
 ```
 
 ### Android Setup
