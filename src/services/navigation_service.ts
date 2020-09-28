@@ -118,3 +118,15 @@ export const getRootState = () => navigationRef.current!.getRootState();
 export const replace = (name: string, params?: object) => {
   navigationRef.current!.dispatch(StackActions.replace(name, params));
 };
+
+/**
+ * Gets screens to map in the <Navigator>
+ */
+export const getScreens = (screens: React.ReactElement[]) => {
+  const names = Object.keys(screens);
+  const components = Object.values(screens);
+  return names.map((name, i) => ({
+    name,
+    component: components[i],
+  }));
+};
