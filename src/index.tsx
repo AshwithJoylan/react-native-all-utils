@@ -6,3 +6,4 @@ export * from './higher_order';
 export { default as Toggle } from './toggle';
 export { default as Modal } from './modal';
 export * from './services';
+export * from './metrics';
