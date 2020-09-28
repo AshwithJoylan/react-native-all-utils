@@ -1,6 +1,6 @@
 {
   "name": "react-native-all-utils",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "Utils For React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
