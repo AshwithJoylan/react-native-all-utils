@@ -122,7 +122,7 @@ export const replace = (name: string, params?: object) => {
 /**
  * Gets screens to map in the <Navigator>
  */
-export const getScreens = (screens: any[]) => {
+export const getScreens = (screens: object) => {
   const names = Object.keys(screens);
   const components = Object.values(screens);
   return names.map((name, i) => ({
