@@ -122,11 +122,14 @@ export const replace = (name: string, params?: object) => {
 /**
  * Gets screens to map in the <Navigator>
  */
-export const getScreens = (screens: React.ReactElement[]) => {
+export const getScreens = (screens: any[]) => {
   const names = Object.keys(screens);
   const components = Object.values(screens);
   return names.map((name, i) => ({
     name,
     component: components[i],
-  }));
+  })) as {
+    name: string;
+    component: React.ComponentClass<any, any> | React.FunctionComponent<any>;
+  }[];
 };
