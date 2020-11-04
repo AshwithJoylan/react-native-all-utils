@@ -135,7 +135,7 @@ export default ({
   barStyle: bs = 'dark-content',
   borderColor = '#00000010', //'#DEDEE060',
   color = 'black',
-  underlay = 'rgba(63, 118, 230, 0.2)',
+  underlay = 'rgba(0, 0, 0, 0.05)',
   hideTop = false,
 }: HeaderProps) => {
   const routeTitle = useRoute()

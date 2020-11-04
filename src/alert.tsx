@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   View,
@@ -165,8 +166,8 @@ export default class Alert extends React.PureComponent<AlertComponentProps> {
         this.val?.setValue(0);
         timing(this.val, {
           toValue: 1,
-          easing: Easing.bezier(0.16, 1, 0.3, 1),
-          duration: 200,
+          easing: Easing.bezier(0, 1, 0, 1),
+          duration: 100,
         }).start();
       }
     );
@@ -212,7 +213,7 @@ export default class Alert extends React.PureComponent<AlertComponentProps> {
   animateBack = () => {
     timing(this.val, {
       toValue: 0,
-      duration: 100,
+      duration: 300,
       easing: Easing.linear,
     }).start(({ finished }) => {
       if (finished) {

@@ -82,7 +82,7 @@ const Highlight: FC<HighlightProps> = (props) => {
   const onPressOut = () => {
     timing(opacity, {
       toValue: 0,
-      duration: 200,
+      duration: 300,
       easing: Easing.linear,
     }).start();
     props.onPressOut && props.onPressOut();
@@ -117,7 +117,7 @@ const Highlight: FC<HighlightProps> = (props) => {
 };
 
 Highlight.defaultProps = {
-  underlayColor: 'rgba(0,0,0,0.2)',
+  underlayColor: 'rgba(0,0,0,0.05)',
   onPress: () => {},
   disabled: false,
 };

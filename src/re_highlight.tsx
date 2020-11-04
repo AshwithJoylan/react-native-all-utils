@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, { ReactNode, useRef } from 'react';
 import { ViewStyle, StyleSheet, StyleProp } from 'react-native';
 import { TapGestureHandler, State } from 'react-native-gesture-handler';
@@ -14,7 +15,7 @@ export interface Props {
    * Underlay Color
    * @type {string}
    * @memberof Props
-   * @default "rgba(28, 134, 121, 0.2)""
+   * @default "rgba(0,0,0,0.05)""
    */
   underlayColor?: string;
   /**
@@ -71,7 +72,7 @@ export default ({
   style,
   val,
   children,
-  underlayColor = 'rgba(0,0,0,0.2)',
+  underlayColor = 'rgba(0,0,0,0.05)',
   testID,
   disabled = false,
 }: Props) => {
@@ -92,14 +93,14 @@ export default ({
         } else if (state === State.END) {
           timing(opacity, {
             toValue: 0,
-            duration: 100,
+            duration: 400,
             easing: Easing.linear,
           }).start();
           onPress();
         } else if (state === State.CANCELLED || state === State.FAILED) {
           timing(opacity, {
             toValue: 0,
-            duration: 100,
+            duration: 400,
             easing: Easing.linear,
           }).start();
           onPressOut();

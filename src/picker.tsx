@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, { PureComponent } from 'react';
 import {
   View,
@@ -102,12 +103,12 @@ export default class Picker extends PureComponent<PickerProps, PickerState> {
             timing(this.y, {
               toValue: 0,
               easing: Easing.linear,
-              duration: 100,
+              duration: 300,
             }).start();
           } else {
             timing(this.value, {
               toValue: 0,
-              duration: 100,
+              duration: 300,
               easing: Easing.linear,
             }).start(({ finished }) => {
               if (finished) {
@@ -151,8 +152,8 @@ export default class Picker extends PureComponent<PickerProps, PickerState> {
       () => {
         timing(this.value, {
           toValue: 1,
-          duration: 300,
-          easing: Easing.linear,
+          duration: 100,
+          easing: Easing.bezier(0, 1, 0, 1),
         }).start();
       }
     );
@@ -257,7 +258,10 @@ export default class Picker extends PureComponent<PickerProps, PickerState> {
                 height:
                   data!.length <= 7
                     ? undefined
-                    : Sizes.SIZE_20 + 7 * Sizes.SIZE_50,
+                    : Sizes.SIZE_20 +
+                      (this.props.bottom || 0) +
+                      7 * Sizes.SIZE_50,
+                paddingBottom: this.props.bottom,
               },
             ]}
           >

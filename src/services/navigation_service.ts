@@ -20,7 +20,7 @@ export const navigationRef = createRef<NavigationContainerRef>();
  * @param params — Params object for the route.
  */
 export const navigate = (name: string, params?: object) => {
-  navigationRef.current!.navigate(name, params);
+  navigationRef.current?.navigate(name, params);
 };
 
 /**
@@ -28,14 +28,14 @@ export const navigate = (name: string, params?: object) => {
  */
 export const goBack = () => {
   if (navigationRef.current?.canGoBack()) {
-    navigationRef.current!.goBack();
+    navigationRef.current?.goBack();
   }
 };
 
 /**
  * Check if dispatching back action will be handled by navigation. Note that this method doesn't re-render screen when the result changes. So don't use it in render.
  */
-export const canGoBack = () => navigationRef.current!.canGoBack();
+export const canGoBack = () => navigationRef.current?.canGoBack();
 
 /**
  * Subscribe to events from the parent navigator.
@@ -47,7 +47,7 @@ export const canGoBack = () => navigationRef.current!.canGoBack();
 export const addListener = (
   type: 'state',
   callback: EventListenerCallback<NavigationContainerEventMap, 'state'>
-) => navigationRef.current!.addListener(type, callback);
+) => navigationRef.current?.addListener(type, callback);
 
 /**
  * UnSubscribe to events from the parent navigator.
@@ -59,7 +59,7 @@ export const addListener = (
 export const removeListener = (
   type: 'state',
   callback: EventListenerCallback<NavigationContainerEventMap, 'state'>
-) => navigationRef.current!.removeListener(type, callback);
+) => navigationRef.current?.removeListener(type, callback);
 
 /**
  * Update the param object for the route. The new params will be shallow merged with the old one.
@@ -82,7 +82,7 @@ export const reset = (state: NavigationState | PartialState<NavigationState>) =>
  * To get notified of focus changes, use `addListener('focus', cb)` and `addListener('blur', cb)`.
  * To conditionally render content based on focus state, use the `useIsFocused` hook.
  */
-export const isFocused = () => navigationRef.current!.isFocused();
+export const isFocused = () => navigationRef.current?.isFocused();
 
 /**
  * Dispatch an action or an update function to the router.
@@ -108,7 +108,7 @@ export const resetRoot = (
 /**
  * Get the rehydrate navigation state of the navigation tree.
  */
-export const getRootState = () => navigationRef.current!.getRootState();
+export const getRootState = () => navigationRef.current?.getRootState();
 
 /**
  *

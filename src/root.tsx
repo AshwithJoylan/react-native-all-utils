@@ -8,6 +8,7 @@ import ImagePickerComponent, {
 import DateTimePickerComponent, {
   DateTimePickerComponentProps,
 } from './date_time_picker';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 let Alert: AlertComponent | null = null;
 let Toast: ToastComponent | null = null;
@@ -28,10 +29,15 @@ export interface RootProps {
  * Root
  */
 const CustomRoot: FC<RootProps> = (props) => {
+  const { bottom } = useSafeAreaInsets();
   return (
     <>
       <ToastComponent ref={(ref) => (Toast = ref)} />
-      <PickerComponent {...props.pickerProps} ref={(ref) => (Picker = ref)} />
+      <PickerComponent
+        {...{ bottom }}
+        {...props.pickerProps}
+        ref={(ref) => (Picker = ref)}
+      />
       <AlertComponent {...props.alertProps} ref={(ref) => (Alert = ref)} />
       <ImagePickerComponent
         {...props.imagePickerProps}
